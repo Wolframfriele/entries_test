@@ -1,0 +1,112 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  --darkest: black;
+  --background: #161616;
+  --background-deep: #121212;
+  --darker-black: #0f0f0f;
+  --lighter-black: #2e2e2e;
+  --title-color: white;
+  --text-color: #d6d6d6;
+  --link-color: #a1a1a1;
+  --secondary-text: #686868;
+  --hover-text: #f6f6f6;
+  --active-text: #d6d6d6;
+  --active-color: #686868;
+  --font-family: "Helvetica", "Arial", "sans-serif";
+  --header-font-family:
+    "DejaVu Sans", "SF Pro Display", "Segoe UI Light", "sans-serif";
+  --logo-brightness: 100%;
+
+  --yellow: #fae3b0;
+  --red: #ee5396;
+  --pink: #ff7eb6;
+  --green: #25be6a;
+  --cyan: #5ae0df;
+  --deep-cyan: #2dc7c4;
+  --blue: #33b1ff;
+  --blue-purple: #78a9ff;
+  --magenta: #be95ff;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --darkest: #cfcfcf;
+    --background: #f6f6f6;
+    --background-deep: #fff;
+    --darker-black: #a1a1a1;
+    --lighter-black: #cfcfcf;
+    --title-color: #0f0f0f;
+    --text-color: #303030;
+    --link-color: #202020;
+    --secondary-text: #686868;
+    --hover-text: #f4f4f4;
+    --active-text: #cccccc;
+    --active-color: #686868;
+    --logo-brightness: 90%;
+  }
+}
+
+body {
+  background-color: var(--background);
+  font-family: var(--font-family);
+  color: var(--text-color);
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  margin: 0;
+}
+
+p,
+li {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+a {
+  color: var(--deep-cyan);
+  font-size: 1.25rem;
+}
+
+a:hover {
+  color: var(--title-color);
+  font-size: 1.25rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--header-font-family);
+  color: var(--title-color);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 100;
+}
+
+h2 {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.active {
+  background: var(--lighter-black);
+}
