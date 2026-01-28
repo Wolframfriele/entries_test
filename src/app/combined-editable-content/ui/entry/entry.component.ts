@@ -4,6 +4,7 @@ import { Entry } from "../../../entries.service";
 @Component({
   selector: "app-entry",
   imports: [],
+  standalone: true,
   template: `
     <li
       contenteditable="true"
