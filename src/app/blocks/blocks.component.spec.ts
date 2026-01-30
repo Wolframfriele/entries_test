@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TextBoxPerEntryComponent } from './text-box-per-entry.component';
+import { BlocksComponent } from './blocks.component';
 
 describe('TextBoxPerEntryComponent', () => {
-  let component: TextBoxPerEntryComponent;
-  let fixture: ComponentFixture<TextBoxPerEntryComponent>;
+  let component: BlocksComponent;
+  let fixture: ComponentFixture<BlocksComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [TextBoxPerEntryComponent]
+      imports: [BlocksComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TextBoxPerEntryComponent);
+    fixture = TestBed.createComponent(BlocksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

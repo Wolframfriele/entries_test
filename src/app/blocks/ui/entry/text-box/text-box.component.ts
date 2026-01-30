@@ -3,6 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-text-box',
   imports: [],
+  standalone: true,
   template: `
     <p>
       text-box works!
@@ -11,5 +12,6 @@ import { Component } from '@angular/core';
   styles: ``
 })
 export class TextBoxComponent {
+
 
 }

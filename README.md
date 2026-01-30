@@ -2,6 +2,7 @@
 
 The goal for this repository is to figure out what works better:
 - A custom textbox component, that communicates it's caret position etc
+  - It seems that its not possible to combine all the elements
 - Setting the editable content over the UL entries so that you can move freely between them
 
 ## Development server
